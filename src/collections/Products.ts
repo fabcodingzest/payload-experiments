@@ -24,7 +24,7 @@ const Products: CollectionConfig = {
       ]
     },
     {
-      name: 'server-image',
+      name: 'server_image',
       label: 'Upload Image to Server',
       type: 'upload',
       relationTo: 'media',
@@ -36,10 +36,10 @@ const Products: CollectionConfig = {
       }
     },
     {
-      name: 'cloudinary-image',
+      name: 'cloudinary_image',
       label: 'Upload Product Image on Cloudinary',
       type: 'upload',
-      relationTo: 'cloudinary-media',
+      relationTo: 'cloudinary_media',
       admin: {
         condition: (data: Record<string, unknown>) :boolean=> {
           if(data.upload_type === 'CLOUDINARY UPLOAD') return true;

@@ -17,18 +17,18 @@ const Media: CollectionConfig = {
         width: 768,
         height: 1024,
         crop: 'centre',
-      }
+      },
     ],
     adminThumbnail: 'thumbnail',
     mimeTypes: ['image/*'],
+  },
+  fields: [
+    {
+      name: 'altText',
+      type: 'text',
+      label: 'AltText',
     },
-    fields: [
-        {
-            name: 'altText',
-            type: 'text',
-            label: 'AltText'
-        }
-    ]
-}
+  ],
+};
 
-export default Media
+export default Media;

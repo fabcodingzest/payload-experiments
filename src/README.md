@@ -6,7 +6,7 @@
     │   │   ├── cloudinaryConfig.ts
     │   │   └── CloudinaryMediaHooks.ts
     │   └── cloudinaryPlugin.ts
-    ├── cloudinary-media
+    ├── cloudinary_media
     ├── collections
     │   ├── CloudinaryMedia.ts
     │   ├── Image.ts

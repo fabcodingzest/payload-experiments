@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types';
 
 const CloudinaryMedia: CollectionConfig = {
-  slug: 'cloudinary-media',
+  slug: 'cloudinary_media',
   upload: {
     // thumbnail image for the admin UI will use cloudinary instead of the admin host URL
     adminThumbnail: ({ doc }) => String(doc.cloudinaryURL),

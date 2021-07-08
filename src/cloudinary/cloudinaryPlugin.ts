@@ -6,7 +6,7 @@ const addCloudinary = (incomingConfig: Config): Config => {
   const config: Config = {
     ...incomingConfig,
     collections: incomingConfig.collections.map((collection) => {
-      if (Boolean(collection.slug === 'cloudinary-media')) {
+      if (Boolean(collection.slug === 'cloudinary_media')) {
         return {
           ...collection,
           hooks: {

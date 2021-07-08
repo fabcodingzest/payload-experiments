@@ -51,13 +51,13 @@ const afterChangeHook: AfterChangeHook = ({ doc, operation }) => {
   // DONE: find the doc by the doc.filename on the hard drive of the server
   // if it exists, delete it
   if (doc?.filename) {
-    const mainFilePath = path.resolve(__dirname + `../../../cloudinary-media/${doc.filename}`);
+    const mainFilePath = path.resolve(__dirname + `../../../cloudinary_media/${doc.filename}`);
     deleteFile(mainFilePath);
   }
   // DONE: and all of its sizes(if any)
   if (doc?.sizes) {
     for (const imageName in doc.sizes) {
-      const filePath = path.resolve(__dirname + `../../../cloudinary-media/${doc.sizes[imageName].filename}`);
+      const filePath = path.resolve(__dirname + `../../../cloudinary_media/${doc.sizes[imageName].filename}`);
       deleteFile(filePath);
     }
   }

@@ -4,4 +4,4 @@ out
 build
 dist
 media/*
-cloudinary-media/*
+cloudinary_media/*
